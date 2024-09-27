@@ -146,6 +146,35 @@
         .hidden {
             display: none;
         }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(20, 28, 58, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #58cc02;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                position: static;
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -172,6 +201,10 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        Built with ❤️ by <a href="https://twitter.com/koushithamin" target="_blank" rel="noopener noreferrer">Koushith</a>
+    </footer>
 
     <script>
         const form = document.getElementById('waitlist-form');
